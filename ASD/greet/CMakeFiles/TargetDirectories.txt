@@ -1,0 +1,3 @@
+/home/genius/1st_Assign/ASD/greet/CMakeFiles/edit_cache.dir
+/home/genius/1st_Assign/ASD/greet/CMakeFiles/rebuild_cache.dir
+/home/genius/1st_Assign/ASD/greet/CMakeFiles/hello!.dir

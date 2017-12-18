@@ -1,0 +1,3 @@
+/home/genius/1st_Assign/ASD/Bye/CMakeFiles/edit_cache.dir
+/home/genius/1st_Assign/ASD/Bye/CMakeFiles/rebuild_cache.dir
+/home/genius/1st_Assign/ASD/Bye/CMakeFiles/bye.dir

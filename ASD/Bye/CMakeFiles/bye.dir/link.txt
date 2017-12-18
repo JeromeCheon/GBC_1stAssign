@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/bye.dir/Bye.cpp.o  -o bye -rdynamic 
