@@ -1,10 +1,9 @@
 #ifndef FLOATELEMENT_H
 #define FLOATELEMENT_H
 #include <iostream>
-using namespace std;
 
-class FloatElement{
-private:
+class FloatElement : public RawElement{
+protected:
 	int value;
 public:
 	FloatElement(int n);
