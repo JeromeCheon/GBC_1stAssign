@@ -1,0 +1,8 @@
+add_library(parser Infix.cpp)
+add_library(parser Prefix.cpp)
+add_library(parser Postfix.cpp)
+add_library(parser Parser.cpp)
+add_executable(infix Infix.cpp)
+add_executable(prefix Prefix.cpp)
+add_executable(postfix Postfix.cpp)
+add_executable(parserMain Parser.cpp)
