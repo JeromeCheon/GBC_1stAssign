@@ -1,0 +1,13 @@
+logrotate state -- version 2
+"/home/jeonghyejin/.cache/upstart/unity7.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/hud.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/indicator-sound.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/update-notifier-release.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/dbus.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/unity-panel-service.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/ssh-agent.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/gnome-keyring-ssh.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/unity-settings-daemon.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/window-stack-bridge.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/gpg-agent.log" 2017-12-19-12:54:57
+"/home/jeonghyejin/.cache/upstart/upstart-event-bridge.log" 2017-12-19-12:54:57
