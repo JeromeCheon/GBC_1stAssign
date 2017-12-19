@@ -1,0 +1,236 @@
+// focus
+function allblur() {
+  for (i = 0; i < document.links.length; i++)
+	document.links[i].onfocus = document.links[i].blur;
+}
+
+// pop_up Cookie
+function GetCookie1(sName) {
+  	var aCookie = document.cookie.split("; ");
+  	for (var i=0; i < aCookie.length; i++)  {
+  		var aCrumb = aCookie[i].split("=");
+    	if (sName == aCrumb[0]) {
+	        return unescape(aCrumb[1]);
+		}
+  	}
+  	// a cookie with the requested name does not exist
+  	return "";
+}
+
+function getCookie(name){
+	var namestr   = name + "=";
+	var namelen   = namestr.length;
+	var cookielen = document.cookie.length;
+
+	var i    = 0;
+	while(i< cookielen){
+		var j = i+namelen;
+		if(document.cookie.substring(i,j)==namestr){
+			var end = document.cookie.indexOf(";",j);
+			if(end== -1)
+				end = document.cookie.length;
+			return unescape(document.cookie.substring(j,end));
+		}
+		i=document.cookie.indexOf(" ",i)+1;
+		if (i==0) break;
+	}
+	return null;
+}
+
+function setCookie(name,value){
+	var expires = new Date();
+	var path,domain,secure;
+
+	var argv    = setCookie.arguments; 
+	var argc    = setCookie.arguments.length;  
+	if (argc > 2) {
+		expires.setTime(expires.getTime() + (1000*60*argv[2]));
+	} 
+	else {
+		expires  = null;
+	}
+	path    = (argc > 3) ? argv[3] : null;  
+	domain  = (argc > 4) ? argv[4] : null;  
+	secure  = (argc > 5) ? argv[5] : false;  
+	document.cookie = name + "=" + escape (value) + 
+							((expires == null) ? ""         : ("; expires=" + expires.toGMTString())) + 
+							((path    == null) ? ""         : ("; path=" + path)) +  
+							((domain  == null) ? ""         : ("; domain=" + domain)) +    
+							((secure  == true) ? "; secure" : "");
+							
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+
+MM_reloadPage(true);
+
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+
+ 
+var winopenID = null;
+
+function winopen(url) { 
+	var IsOpen = getCookie("EVENT20000522");
+	if (IsOpen == null)
+		winopenID = window.open(url,'AAA','toolbar=no,menubar=no,location=no,height=525,width=410,top=50,left=50'); 
+//	setCookie('EVENT20000520','yes',1000,'/');
+}
+
+function winopen1(url) { 
+	var IsOpen = getCookie("iphak2002");
+	if (IsOpen == null)
+		winopenID = window.open(url,'AAA','scrollbars=no,resizable=no,toolbar=no,menubar=no,location=no,height=587,width=332,top=10,left=10'); 
+//	setCookie('EVENT20000520','yes',1000,'/');
+}
+
+function winclose() { 
+	if(winopenID != null) 
+		winopenID.close();
+	else
+		return true;
+}
+
+function nalga() {
+	alert("7¿ù 28ÀÏ ºÎÅÍ Ãâ·ÂÀÌ °¡´ÉÇÕ´Ï´Ù.");
+}
+
+function newwin2(url,w,h) {
+	opts = "width="+w+",height="+h+",scrollbars=yes,resizable=no,toolbars=no,menubars=no,statusbars=no, top=20,left=20";
+	mywin = window.open(url,"newwindow",opts);
+	
+	aw = screen.availWidth;
+	ah = screen.availHeight;
+	
+	//mywin.moveTo( parseInt( (aw-w)/2 ), parseInt( (ah-h) /2 )-20);
+	//mywin.focus();
+}
+
+function newwin4(url,w,h) {
+	opts = "width="+w+",height="+h+",scrollbars=no,resizable=no,toolbars=no,menubars=no,statusbars=no, top=20,left=20";
+	mywin = window.open(url,"newwindow",opts);
+	
+	aw = screen.availWidth;
+	ah = screen.availHeight;
+	
+	//mywin.moveTo( parseInt( (aw-w)/2 ), parseInt( (ah-h) /2 )-20);
+	//mywin.focus();
+}
+
+function newwin3(url,w,h) {
+	opts = "width="+w+",height="+h+",scrollbars=no,resizable=no,toolbars=no,menubars=no,statusbars=no, top=20,left=20";
+	mywin = window.open(url,"newwindow",opts);
+	
+	aw = screen.availWidth;
+	ah = screen.availHeight;
+	
+	//mywin.moveTo( parseInt( (aw-w)/2 ), parseInt( (ah-h) /2 )-20);
+	//mywin.focus();
+}
+
+function newwin(url) {
+	opts = "width=780,height=550,scrollbars=yes,resizable=yes,toolbars=no,menubars=no,statusbars=no,top=50,left=50";
+	mywin = window.open(url,"newwindow",opts);
+	
+	aw = screen.availWidth;
+	ah = screen.availHeight;
+	
+	//mywin.moveTo( parseInt( (aw-600)/2 ), parseInt( (ah-400) /2 )-10);
+	//mywin.focus();
+}
+
+function winup(url, field)
+{ 
+	var opt = "toolbar=no,resizable=no,scrollbars=no,location=no,resize=no,menubar=no,directories=no,copyhistory=0,width=500,height=400,top= 100,left = 200"; 	
+	window.open(url, 'window', opt); 
+}
+
+function playflash_tr(file,width,height,bgcolor,quality,name) {
+        document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+width+'" height="'+height+'" id="'+name+'">');  //ÇÃ·¡½¬ÇÃ·¹ÀÌ¾î ¹öÀüÀÌ ÀÌÀü¹öÀüÀÏ°æ¿ì ¹öÀü 8À» º¯°æ
+        document.write('<param name="movie" value="'+file+'" />');
+        document.write('<param name="quality" value="'+quality+'" />');
+        document.write('<param name="wmode" value="transparent" />');  //Åõ¸íÇÃ·¡½¬°¡ ¾Æ´Ò°æ¿ì ÀÌ ¶óÀÎÀ» »èÁ¦
+        document.write('<param name="bgcolor" value="'+bgcolor+'" />');
+        document.write('<embed src="'+file+'" quality="'+quality+'" wmode="transparent" bgcolor="'+bgcolor+'" width="'+width+'" height="'+height+'" name="'+name+'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+        document.write('</object>')
+}
+
+function playflash(file,width,height,bgcolor,quality,name) {
+        document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+width+'" height="'+height+'" id="'+name+'">');  //ÇÃ·¡½¬ÇÃ·¹ÀÌ¾î ¹öÀüÀÌ ÀÌÀü¹öÀüÀÏ°æ¿ì ¹öÀü 8À» º¯°æ
+        document.write('<param name="movie" value="'+file+'" />');
+        document.write('<param name="quality" value="'+quality+'" />');
+        document.write('<param name="bgcolor" value="'+bgcolor+'" />');
+        document.write('<embed src="'+file+'" quality="'+quality+'" bgcolor="'+bgcolor+'" width="'+width+'" height="'+height+'" name="'+name+'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+        document.write('</object>')
+}
+
+function playflash_tr_60(file,width,height,bgcolor,quality,name) {
+        document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="'+width+'" height="'+height+'" id="'+name+'">');  //ÇÃ·¡½¬ÇÃ·¹ÀÌ¾î ¹öÀüÀÌ ÀÌÀü¹öÀüÀÏ°æ¿ì ¹öÀü 8À» º¯°æ
+        document.write('<param name="movie" value="'+file+'" />');
+        document.write('<param name="quality" value="'+quality+'" />');
+        document.write('<param name="wmode" value="transparent" />');  //Åõ¸íÇÃ·¡½¬°¡ ¾Æ´Ò°æ¿ì ÀÌ ¶óÀÎÀ» »èÁ¦
+        document.write('<param name="bgcolor" value="'+bgcolor+'" />');
+        document.write('<embed src="'+file+'" quality="'+quality+'" wmode="transparent" bgcolor="'+bgcolor+'" width="'+width+'" height="'+height+'" name="'+name+'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+        document.write('</object>')
+}
+
+function playflash_60(file,width,height,bgcolor,quality,name) {
+        document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="'+width+'" height="'+height+'" id="'+name+'">');  //ÇÃ·¡½¬ÇÃ·¹ÀÌ¾î ¹öÀüÀÌ ÀÌÀü¹öÀüÀÏ°æ¿ì ¹öÀü 8À» º¯°æ
+        document.write('<param name="movie" value="'+file+'" />');
+        document.write('<param name="quality" value="'+quality+'" />');
+        document.write('<param name="bgcolor" value="'+bgcolor+'" />');
+        document.write('<embed src="'+file+'" quality="'+quality+'" bgcolor="'+bgcolor+'" width="'+width+'" height="'+height+'" name="'+name+'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');
+        document.write('</object>');
+}
+
+ ÐPœõ©      Z6oiZ6oi>‡×·Z?©é   *    :https://hisnet.handong.edu/images/main.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 17 Dec 2017 13:21:45 GMT
+Server: Apache/2.2.15 (CentOS)
+Last-Modified: Tue, 09 Apr 2013 08:32:43 GMT
+Etag: "fa846d-250c-4d9e965a8a0c0"
+Accept-Ranges: bytes
+Content-Length: 9484
+Content-Type: text/javascript
+ original-response-headers Date: Sun, 17 Dec 2017 13:21:45 GMT
+Server: Apache/2.2.15 (CentOS)
+Last-Modified: Tue, 09 Apr 2013 08:32:43 GMT
+Etag: "fa846d-250c-4d9e965a8a0c0"
+Accept-Ranges: bytes
+Content-Length: 9484
+Keep-Alive: timeout=5, max=52
+Connection: Keep-Alive
+Content-Type: text/javascript
+Set-Cookie: NSC_ijtofu_ttm=ffffffffc8f47f2145525d5f4f58455e445a4a423660;expires=Sun, 17-Dec-2017 15:21:45 GMT;path=/;secure;httponly
+ uncompressed-len 0 net-response-time-onstart 92 net-response-time-onstop 96   %
