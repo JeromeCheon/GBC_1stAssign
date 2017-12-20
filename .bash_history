@@ -1492,3 +1492,35 @@ cmake . src
 make
 ls
 exit
+cd gbc
+ls
+cd src
+cd calculator
+ls
+cd parser
+ls
+vim Parser.cpp
+exit
+ls
+cd gbc
+ls
+cd src
+ls
+cd calculator
+ls
+cd parser
+ls
+cd ..
+ls
+cd operand
+ls
+vim RawElement.cpp
+vim IntElement.cpp
+ls
+cd ..
+ls
+cd parser
+ls
+cd Parser.cpp
+vim Parser.cpp
+exit

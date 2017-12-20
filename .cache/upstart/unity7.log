@@ -1,14 +1,11 @@
-ERROR 2017-12-19 14:54:49 unity.settings UnitySettings.cpp:318 Invalid monitor index: -1. Returning index 0 monitor instead.
+WARN  2017-12-20 19:11:29 unity.iconloader IconLoader.cpp:756 Unable to load icon file:/// at size -1x22: Can't open directory
 
-(nautilus:3253): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+(nautilus:1972): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
 
-(nautilus:3253): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+(nautilus:1972): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
 
-(nautilus:3253): Gtk-CRITICAL **: gtk_icon_theme_get_for_screen: assertion 'GDK_IS_SCREEN (screen)' failed
+(nautilus:1972): Gtk-CRITICAL **: gtk_icon_theme_get_for_screen: assertion 'GDK_IS_SCREEN (screen)' failed
 
-(nautilus:3253): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+(nautilus:1972): GLib-GObject-WARNING **: invalid (NULL) pointer instance
 
-(nautilus:3253): GLib-GObject-CRITICAL **: g_signal_connect_object: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-ERROR 2017-12-19 18:41:04 unity.settings UnitySettings.cpp:318 Invalid monitor index: -1. Returning index 0 monitor instead.
-ERROR 2017-12-20 10:53:50 unity.settings UnitySettings.cpp:318 Invalid monitor index: -1. Returning index 0 monitor instead.
-ERROR 2017-12-20 11:02:34 unity.settings UnitySettings.cpp:318 Invalid monitor index: -1. Returning index 0 monitor instead.
+(nautilus:1972): GLib-GObject-CRITICAL **: g_signal_connect_object: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
