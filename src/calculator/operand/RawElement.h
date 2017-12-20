@@ -2,7 +2,7 @@
 #define RAWELEMENT_H
 #include <iostream>
 
-class RawElement{
+class RawElement: public Data{
 public:
 	RawElement();
 	~RawElement();
