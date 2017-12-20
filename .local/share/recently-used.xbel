@@ -16,4 +16,18 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/jeonghyejin/gbc/src/calculator/parser/Parser.cpp" added="2017-12-20T13:05:59Z" modified="2017-12-20T13:06:28Z" visited="2017-12-20T13:05:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-c++src"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;vim %F&apos;" modified="2017-12-20T13:05:59Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-12-20T13:06:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

@@ -1,1 +1,32 @@
-[31mvoid DBusMenuImporter::slotGetLayoutFinished(QDBusPendingCallWatcher*)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/52428816"
+[31mvoid DBusMenuImporter::slotGetLayoutFinished(QDBusPendingCallWatcher*)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mvoid DBusMenuImporter::slotGetLayoutFinished(QDBusPendingCallWatcher*)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mvoid DBusMenuImporter::slotGetLayoutFinished(QDBusPendingCallWatcher*)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/52428819"
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/52428819"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/52428819"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/52428819"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/52428819"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotGetLayoutFinished(QDBusPendingCallWatcher*)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/41945472"
+[31mvoid DBusMenuImporter::slotGetLayoutFinished(QDBusPendingCallWatcher*)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54547244"
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "The ID supplied 155 does not refer to a menu item we have"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "The ID supplied 155 does not refer to a menu item we have"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "No such interface 'com.canonical.dbusmenu' on object at path /org/ayatana/bamf/window/54525962"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "The ID supplied 206 does not refer to a menu item we have"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "The ID supplied 206 does not refer to a menu item we have"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
+[31mvoid DBusMenuImporter::slotAboutToShowDBusCallFinished(QDBusPendingCallWatcher*)[0m: Call to AboutToShow() failed: "The ID supplied 257 does not refer to a menu item we have"
+[31mbool DBusMenuImporterPrivate::waitForWatcher(QDBusPendingCallWatcher*, int)[0m: "The ID supplied 257 does not refer to a menu item we have"
+[31mvoid DBusMenuImporter::slotMenuAboutToShow()[0m: Application did not answer to AboutToShow() before timeout
