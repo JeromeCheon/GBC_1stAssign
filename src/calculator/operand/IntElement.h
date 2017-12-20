@@ -1,10 +1,9 @@
 #ifndef INTELEMENT_H
 #define INTELEMENT_H
 #include <iostream>
-using namespace std;
 
-class IntElement{
-private:
+class IntElement : public RawElement{
+protected:
 	int value;
 	string type;
 public:
