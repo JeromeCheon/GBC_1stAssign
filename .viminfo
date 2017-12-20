@@ -11,13 +11,13 @@
 ~MSle0~/clean
 
 # Command Line History (newest to oldest):
-:q
 :wq
+:q
+:w
+:1
 :q!
 :Wq
 :21
-:w
-:1
 
 # Search String History (newest to oldest):
 ?/clean
@@ -29,46 +29,89 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	It's good to see U
+"0	CHAR	0
 	this.
-"1	LINE	0
-	
+""1	LINE	0
+	this.
 "2	LINE	0
-		private:
+	Thank U.
 "3	LINE	0
 	this.
 "4	LINE	0
-	this.
+	It's good to see U
 "5	LINE	0
-	It's good to see U
-	this.
+	you will do
 "6	LINE	0
-	you will do this.
-"7	LINE	0
-	It's good to see U
-"8	LINE	0
-	
-"9	LINE	0
 	Thank U.
-""-	CHAR	0
-	`
+"7	LINE	0
+	hello nice to meet yo
+"8	LINE	0
+		void getType();
+"9	LINE	0
+		}
+	}
+"-	CHAR	0
+	 
 
 # File marks:
-'0  1  0  ~/gbc/src/calculator/CMakeLists.txt
-'1  1  0  ~/gbc/src/CMakeLists.txt
-'2  3  27  ~/gbc/src/CMakeLists.txt
-'3  5  29  ~/gbc/src/CMakeLists.txt
-'4  104  11  ~/gbc/Makefile
-'5  12  0  ~/gbc/Makefile
-'6  1  0  ~/gbc/ASD/bye/CMakeLists.txt
-'7  1  0  ~/gbc/ASD/CMakeLists.txt
+'0  4  0  ~/test.txt
+'1  39  4  ~/gbc/src/calculator/parser/Parser.cpp
+'2  6  24  ~/gbc/src/calculator/operand/RawElement.h
+'3  1  7  ~/gbc/src/calculator/operand/RawElement.h
+'4  8  0  ~/gbc/src/calculator/operator/Op.h
+'5  1  0  ~/gbc/src/calculator/Calculator.cpp
+'6  1  0  ~/gbc/src/calculator/Calculator.h
+'7  1  0  ~/gbc/src/calculator/parser/Parser.cpp
 '8  1  0  ~/gbc/src/calculator/parser/Parser.h
-'9  1  0  ~/gbc/src/calculator/parser/Parser.cpp
+'9  8  0  ~/gbc/src/Main.cpp
 
 # Jumplist (newest first):
--'  1  0  ~/gbc/src/calculator/CMakeLists.txt
+-'  4  0  ~/test.txt
+-'  1  20  ~/test.txt
+-'  39  4  ~/gbc/src/calculator/parser/Parser.cpp
+-'  1  0  ~/gbc/src/calculator/parser/Parser.cpp
+-'  6  24  ~/gbc/src/calculator/operand/RawElement.h
+-'  1  0  ~/gbc/src/calculator/operand/RawElement.h
+-'  8  0  ~/gbc/src/calculator/operator/Op.h
+-'  1  0  ~/gbc/src/calculator/operator/Op.h
+-'  1  0  ~/gbc/src/calculator/Calculator.cpp
+-'  1  0  ~/gbc/src/calculator/Calculator.h
+-'  1  0  ~/gbc/src/calculator/parser/Parser.h
+-'  8  0  ~/gbc/src/Main.cpp
+-'  1  0  ~/gbc/src/Main.cpp
+-'  9  0  ~/gbc/src/calculator/Data.h
+-'  1  0  ~/gbc/src/calculator/Data.h
+-'  4  13  ~/gbc/src/calculator/Data.cpp
+-'  1  0  ~/gbc/src/calculator/Data.cpp
+-'  1  0  ~/gbc/src/calculator/Data.class
+-'  11  5  ~/gbc/src/calculator/Data.h
+-'  37  0  ~/gbc/src/calculator/parser/Parser.cpp
+-'  10  24  ~/gbc/src/calculator/parser/Parser.h
+-'  36  1  ~/gbc/src/calculator/parser/Parser.cpp
+-'  23  27  ~/gbc/src/calculator/parser/Parser.cpp
+-'  40  1  ~/gbc/src/calculator/parser/Parser.cpp
+-'  20  48  ~/gbc/src/calculator/parser/Parser.cpp
+-'  11  0  ~/gbc/src/Main.cpp
+-'  13  26  ~/gbc/src/calculator/parser/Parser.cpp
+-'  9  19  ~/gbc/src/calculator/parser/Parser.h
+-'  15  28  ~/gbc/src/calculator/parser/Parser.cpp
+-'  18  0  ~/gbc/src/calculator/parser/Parser.cpp
+-'  11  0  ~/gbc/src/calculator/parser/Parser.cpp
+-'  12  0  ~/gbc/src/calculator/parser/Parser.h
+-'  5  0  ~/gbc/src/calculator/parser/Parser.h
+-'  13  5  ~/gbc/src/calculator/parser/Parser.h
+-'  2  0  ~/src/calculator/parser/Parser.cpp
+-'  1  0  ~/src/calculator/parser/Parser.cpp
+-'  1  0  ~/src/calculator/parser/Parser.h
+-'  1  0  ~/src/calculator/calculator.cpp
+-'  1  0  ~/src/calculator/calculator.h
+-'  1  0  ~/src/calculator/operator/op.h
+-'  1  0  ~/src/calculator/operator/Op.h
+-'  1  0  ~/gbc/CMakeLists.txt
+-'  9  58  ~/gbc/src/CMakeLists.txt
 -'  1  0  ~/gbc/src/CMakeLists.txt
+-'  6  32  ~/gbc/src/CMakeLists.txt
+-'  1  0  ~/gbc/src/calculator/CMakeLists.txt
 -'  3  27  ~/gbc/src/CMakeLists.txt
 -'  5  29  ~/gbc/src/CMakeLists.txt
 -'  104  11  ~/gbc/Makefile
@@ -77,8 +120,6 @@
 -'  12  0  ~/gbc/Makefile
 -'  1  0  ~/gbc/ASD/bye/CMakeLists.txt
 -'  1  0  ~/gbc/ASD/CMakeLists.txt
--'  1  0  ~/gbc/src/calculator/parser/Parser.h
--'  1  0  ~/gbc/src/calculator/parser/Parser.cpp
 -'  1  0  ~/gbc/src/calculator/parser/Infix.cpp
 -'  1  0  ~/gbc/src/calculator/parser/Infix.h
 -'  1  0  ~/gbc/src/calculator/parser/Postfix.h
@@ -102,70 +143,259 @@
 -'  1  0  ~/gbc/src/calculator/operator/Binary.cpp
 -'  1  0  ~/gbc/src/calculator/operator/Braket.h
 -'  1  0  ~/gbc/src/calculator/operator/Braket.cpp
--'  1  0  ~/gbc/src/calculator/operator/Op.h
 -'  1  0  ~/gbc/src/calculator/operator/Op.cpp
 -'  1  0  ~/gbc/src/calculator/operand/FloatElement.h
 -'  1  0  ~/gbc/src/calculator/operand/FloatElement.cpp
 -'  1  0  ~/gbc/src/calculator/operand/IntElement.cpp
--'  1  0  ~/gbc/src/calculator/operand/IntElement.h
--'  1  0  ~/gbc/src/calculator/operand/RawElement.cpp
--'  1  0  ~/gbc/src/calculator/operand/RawElement.h
--'  1  0  ~/gbc/src/calculator/operand/RawElent.h
--'  1  0  ~/gbc/src/calculator/operand/CMakeLists.txt
+-'  2  0  ~/src/calculator/parser/Parser.cpp
+-'  1  0  ~/src/calculator/parser/Parser.cpp
+-'  1  0  ~/src/calculator/parser/Parser.h
+-'  1  0  ~/src/calculator/calculator.cpp
+-'  1  0  ~/src/calculator/calculator.h
+-'  1  0  ~/src/calculator/operator/op.h
+-'  1  0  ~/src/calculator/operator/Op.h
+-'  1  0  ~/gbc/CMakeLists.txt
+-'  9  58  ~/gbc/src/CMakeLists.txt
+-'  1  0  ~/gbc/src/CMakeLists.txt
+-'  6  32  ~/gbc/src/CMakeLists.txt
+-'  1  0  ~/gbc/src/calculator/Data.class
+-'  9  0  ~/gbc/src/calculator/Data.h
+-'  8  0  ~/gbc/src/Main.cpp
 -'  1  0  ~/gbc/src/Main.cpp
--'  11  47  ~/gbc/src/calculator/CMakeLists.txt
--'  8  56  ~/gbc/src/calculator/operand/CMakeLists.txt
--'  1  0  ~/gbc/src/cd
--'  12  9  ~/gbc/calculator/Calculator.h
--'  1  0  ~/gbc/calculator/Calculator.h
--'  1  0  ~/gbc/calculator/Calculator.cpp
--'  1  0  ~/gbc/calculator/Caculator.h
--'  11  12  ~/gbc/calculator/calculator.h
--'  1  0  ~/gbc/calculator/calculator.h
--'  1  0  ~/gbc/calculator/calculator
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  1  0  ~/gbc/calculator/calculator
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  11  12  ~/gbc/calculator/calculator.h
--'  1  0  ~/gbc/calculator/calculator.h
--'  1  0  ~/gbc/calculator/calculator
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  1  0  ~/gbc/calculator/calculator
--'  4  0  ~/test.txt
--'  5  0  ~/test.txt
--'  6  0  ~/test.txt
--'  3  0  ~/test.txt
--'  1  0  ~/test.txt
--'  4  0  ~/test.txt
 
 # History of marks within files (newest to oldest):
+
+> ~/test.txt
+	"	4	0
+	.	5	0
+	+	1	7
+	+	1	20
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	0
+	+	5	7
+	+	1	20
+	+	1	20
+	+	2	0
+	+	3	10
+	+	5	0
+	+	5	0
+	+	5	0
+	+	4	1
+	+	5	0
+
+> ~/gbc/src/calculator/parser/Parser.cpp
+	"	39	4
+	^	39	5
+	.	39	4
+	+	40	1
+	+	40	1
+	+	40	8
+	+	7	22
+	+	40	59
+	+	20	32
+	+	40	4
+	+	20	41
+	+	40	4
+	+	20	32
+	+	40	2
+	+	40	1
+	+	40	26
+	+	40	19
+	+	40	10
+	+	40	3
+	+	40	0
+	+	40	23
+	+	40	25
+	+	40	2
+	+	40	3
+	+	40	0
+	+	40	22
+	+	40	20
+	+	40	26
+	+	40	0
+	+	40	0
+	+	40	19
+	+	40	18
+	+	40	22
+	+	40	24
+	+	40	3
+	+	40	0
+	+	40	4
+	+	40	2
+	+	40	21
+	+	40	19
+	+	40	33
+	+	40	82
+	+	40	47
+	+	40	151
+	+	40	1
+	+	40	32
+	+	40	0
+	+	40	22
+	+	40	10
+	+	40	10
+	+	40	21
+	+	40	18
+	+	40	10
+	+	40	29
+	+	40	24
+	+	40	3
+	+	40	20
+	+	40	23
+	+	40	103
+	+	40	0
+	+	40	103
+	+	40	0
+	+	40	149
+	+	40	197
+	+	20	23
+	+	40	0
+	+	14	0
+	+	40	2
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	197
+	+	40	0
+	+	40	16
+	+	40	30
+	+	40	0
+	+	40	17
+	+	40	36
+	+	20	31
+	+	40	0
+	+	40	0
+	+	40	0
+	+	40	0
+	+	20	34
+	+	40	0
+	+	20	34
+	+	40	1
+	+	22	31
+	+	23	28
+	+	40	0
+	+	40	0
+	+	40	0
+	+	23	28
+	+	23	28
+	+	23	28
+	+	23	28
+	+	36	0
+	+	23	169
+	+	23	15
+	+	35	1
+	+	27	22
+	+	34	3
+	+	39	4
+
+> ~/gbc/src/calculator/operand/RawElement.h
+	"	6	24
+	^	6	25
+	.	6	24
+	+	1	19
+	+	2	17
+	+	1	15
+	+	6	24
+
+> ~/gbc/src/calculator/operator/Op.h
+	"	8	0
+	^	8	1
+	.	8	0
+	+	8	0
+
+> ~/gbc/src/calculator/Calculator.cpp
+	"	1	0
+
+> ~/gbc/src/calculator/Calculator.h
+	"	1	0
+
+> ~/gbc/src/calculator/parser/Parser.h
+	"	1	0
+	^	10	25
+	.	10	24
+	+	5	19
+	+	11	1
+	+	13	6
+	+	4	0
+	+	11	0
+	+	9	20
+	+	9	20
+	+	10	24
+
+> ~/gbc/src/Main.cpp
+	"	8	0
+	^	11	1
+	.	11	0
+	+	11	0
+
+> ~/gbc/src/calculator/Data.h
+	"	9	0
+	^	11	6
+	.	9	0
+	+	11	5
+	+	9	0
+
+> ~/gbc/src/calculator/Data.cpp
+	"	4	13
+	^	4	14
+	.	5	0
+	+	5	0
+
+> ~/gbc/src/calculator/Data.class
+	"	1	0
+
+> ~/src/calculator/parser/Parser.cpp
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/src/calculator/parser/Parser.h
+	"	1	0
+
+> ~/src/calculator/calculator.cpp
+	"	1	0
+
+> ~/src/calculator/calculator.h
+	"	1	0
+
+> ~/src/calculator/operator/op.h
+	"	1	0
+
+> ~/src/calculator/operator/Op.h
+	"	1	0
+
+> ~/gbc/CMakeLists.txt
+	"	1	0
+	^	1	0
+
+> ~/gbc/src/CMakeLists.txt
+	"	9	58
+	^	9	59
+	.	8	58
+	+	3	27
+	+	4	25
+	+	5	29
+	+	3	27
+	+	6	32
+	+	10	0
+	+	9	59
+	+	9	0
+	+	8	58
 
 > ~/gbc/src/calculator/CMakeLists.txt
 	"	1	0
@@ -185,15 +415,6 @@
 	+	10	48
 	+	11	47
 
-> ~/gbc/src/CMakeLists.txt
-	"	1	0
-	^	3	28
-	.	3	27
-	+	3	27
-	+	4	25
-	+	5	29
-	+	3	27
-
 > ~/gbc/Makefile
 	"	104	11
 
@@ -201,12 +422,6 @@
 	"	1	0
 
 > ~/gbc/ASD/CMakeLists.txt
-	"	1	0
-
-> ~/gbc/src/calculator/parser/Parser.h
-	"	1	0
-
-> ~/gbc/src/calculator/parser/Parser.cpp
 	"	1	0
 
 > ~/gbc/src/calculator/parser/Infix.cpp
@@ -282,9 +497,6 @@
 > ~/gbc/src/calculator/operator/Braket.cpp
 	"	1	0
 
-> ~/gbc/src/calculator/operator/Op.h
-	"	1	0
-
 > ~/gbc/src/calculator/operator/Op.cpp
 	"	1	0
 
@@ -306,16 +518,10 @@
 > ~/gbc/src/calculator/operand/RawElement.cpp
 	"	1	0
 
-> ~/gbc/src/calculator/operand/RawElement.h
-	"	1	0
-
 > ~/gbc/src/calculator/operand/RawElent.h
 	"	1	0
 
 > ~/gbc/src/calculator/operand/CMakeLists.txt
-	"	1	0
-
-> ~/gbc/src/Main.cpp
 	"	1	0
 
 > ~/gbc/src/cd
@@ -347,26 +553,3 @@
 
 > ~/gbc/calculator/calculator
 	"	1	0
-
-> ~/test.txt
-	"	4	0
-	^	4	2
-	.	5	0
-	+	6	7
-	+	1	20
-	+	6	0
-	+	2	0
-	+	6	0
-	+	6	0
-	+	2	0
-	+	6	0
-	+	3	0
-	+	3	10
-	+	6	0
-	+	4	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	5	0
-	+	4	1
-	+	5	0
