@@ -1,6 +1,13 @@
-#include <iostream>
-#include <calculator.h>
+#include <iostream> 
+#include "./calculator/Calculator.h"
 
-int main(){
-	Calculator c = new Calculator();
+int main(int argc, char* argv[])
+{
+	Calculator* cal = new Calculator("3+2");
+	std::cout << cal->getValue() << std::endl;
+	
+	cal->setString("3*(2+3)");
+	std::cout << cal->getValue() << std::endl;
+	delete cal;
 }
+

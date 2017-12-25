@@ -1,6 +1,7 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include "Data.h"
 
-using namespace std;
+Data::Data() {}
 
+std::string Data::getType() {
+	return "Data type";
+}

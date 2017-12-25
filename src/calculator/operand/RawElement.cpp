@@ -1,17 +1,21 @@
-#include <iostream>
-#include <string.h>
-class RawElement{
+#include "./RawElement.h"
+#include "./IntElement.h"
+#include "./FloatElement.h"
+#include <string>
 
-public:
-	RawElement(){
-		std::cout<< "RawElement() constructor" << std::endl; }
-	~RawElement(){ std::cout<< "RawElement() destructor" << std::endl; }
-	virtual double getValue() = 0; // pure virtual fuction.
-	static RawElement make(string str){
-	//string to integer -> std::stoi(String)
-	//string to float -> std::stof(String)
-		int integer_str = stoi(str);
-		
+RawElement::RawElement() {}
+
+double RawElement::getValue() {}
+
+std::string RawElement::getType() {}
+
+RawElement RawElement::make(std::string str) {
+	if (str.find('.')<0) {
+		IntElement newInt(str);
+		return newInt;
 	}
-	string getType();
-};
+	else {
+		FloatElement newFloat(str);
+		return newFloat;
+	}
+}

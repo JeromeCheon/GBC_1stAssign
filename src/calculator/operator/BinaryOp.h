@@ -1,12 +1,14 @@
 #ifndef BINARYOP_H
 #define BINARYOP_H
 #include "../operand/RawElement.h"
+#include "./Op.h"
+#include <string>
 
-class BinaryOp:public op{
+class BinaryOp :public Op {
 public:
 	BinaryOp(); // constructor
-	virtual RawElement calculate(RawElement e1, RawElement e2)=0; // override!
-	virtual int getPriority()=0; // override!
-	virtual string getType()=0;
+	virtual RawElement calculate(RawElement e1, RawElement e2); // override!
+	virtual int getPriority(); // override!
+	virtual std::string getType();
 };
 #endif

@@ -1,15 +1,19 @@
 #ifndef OP_H
 #define OP_H
 #include <iostream>
-#include <RawElement.h>
+#include <string>
+#include "../operand/RawElement.h"
 
-class op : public Data{
+class Op : public Data {
 public:
-	op();
-	virtual ~op();
+	Op();
+	~Op();
 	virtual RawElement calculate(RawElement e1, RawElement e2);
 	virtual int getPriority();
+	void setPriority(int n);
 	virtual void getValue();
-	virtual string getType();
+	virtual std::string getType();
+private:
+	int priority;
 }
 #endif

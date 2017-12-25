@@ -1,15 +1,23 @@
 #ifndef INTELEMENT_H
 #define INTELEMENT_H
-#include <iostream>
 
-class IntElement : public RawElement{
-protected:
-	int value;
-	string type;
+#include <string>
+#include "RawElement.h"
+#include "FloatElement.h"
+
+class IntElement : public RawElement {
+	
 public:
+	IntElement();
 	IntElement(int n);
-	IntElement(string n);
-	double getValue();
-	string getType();
+	IntElement(std::string str);
+	virtual double getValue();
+	virtual std::string getType();
+
+private:
+	int value;
+	std::string type;
+	
 };
+
 #endif

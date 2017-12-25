@@ -1,13 +1,16 @@
 #ifndef RAWELEMENT_H
 #define RAWELEMENT_H
-#include <iostream>
 
-class RawElement: public Data{
+#include <string>
+
+#include "../Data.h"
+
+class RawElement : public Data {
 public:
 	RawElement();
-	~RawElement();
 	virtual double getValue();
-	static RawElement make(string str);
-	string getType();
+	RawElement make(std::string str);
+	std::string getType();
 };
+
 #endif

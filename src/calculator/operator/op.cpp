@@ -1,12 +1,14 @@
 #include <iostream>
-
 using namespace std;
 
-op::op(){
-	cout << "Test : op() constructor" <<endl;
+Op::Op() {}
+Op::~Op() {}
+RawElement Op::calculate(RawElement e1, RawElement e2) {}
+int Op::getPriority() {
+	return priority;
 }
-op::~op(){}
-RawElement op::calculate(RawElement e1, RawElement e2){}
-int op::getPriority(){}
-void op::getValue(){}
-string op::getType(){}
+void Op::getValue() {}
+string Op::getType() {}
+void Op::setPriority(int n) {
+	priority = n;
+}
