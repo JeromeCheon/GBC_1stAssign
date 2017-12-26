@@ -5,42 +5,51 @@
 #include "./Postfix.h"
 #include "./Parser.h"
 #include "../operator/Op.h"
-#include "../Data.h"
+#include "../operand/IntElement.h"
+#include "../operand/FloatElement.h"
 
 
-Postfix::Postfix(){}
+Postfix::Postfix() {}
 
-void Postfix::getPostfix() {
+std::list <Data> Postfix::getPf() {
+	return pf;
+}
+
+std::list <Data> Postfix::getPostfix(Parser* u) {
+	std::vector <Data> final = u->getFin(); //(Parser에서 구현된)fin을 final로 받아옴
 	Op eos;
 	st.push(eos);
-	fin.push_back(eos);
-	for (int i = 0; i < fin.size(); i++) {
-		if (fin[i] != eos) {
-			if (fin[i].getType() == "float" || fin[i].getType() == "integer") {
-				pf.push_back(fin[i]);
+	final.push_back(eos);
+	for (int i = 0; i < final.size(); i++) {
+		if (final[i].getType() != "Op") {
+			//infix가 eos에 도달하지 않으면
+			if (final[i].getType() == "float" || final[i].getType() == "integer") {
+				pf.push_back(final[i]);
 			}
-			else if (fin[i].getType() == "closeB") {
-				while (st.top().getType != "openB") {
+			else if (final[i].getType() == "closeB") {
+				while (st.top().getType() != "openB") {
 					Data temp = st.top(); st.pop();
 					pf.push_back(temp);
 				}
 				st.pop();
 			}
 			else {
-				while (st.top().getPriority() >= fin[i].getPriority()) {
+				while (st.top().getPriority() >= final[i].getPriority()) {
 					pf.push_back(st.top()); st.pop();
 				}
-				st.push(fin[i]);
-				if (fin[i].getType() == "openB") {
+				st.push(final[i]);
+				if (final[i].getType() == "openB") {
 					st.top().setPriority(0);
 				}
 			}
 		}
 		else {
-			while (st.top() != eos) {
-				Op tmp = st.top(); st.pop();
+			//infix가 eos에 도달하면
+			while (st.top().getType() != "Op") {
+				Data tmp = st.top(); st.pop();
 				pf.push_back(tmp);
 			}
 		}
 	}
+	return pf;
 }

@@ -3,5 +3,22 @@
 Data::Data() {}
 
 std::string Data::getType() {
-	return "Data type";
+	return unitType;
+}
+
+Data::~Data() {}
+int Data::getPriority() {
+	return priority;
+}
+double Data::getValue() {
+	return value;
+}
+bool Data::operator==(const Data &D) const {
+	return (*this == D);
+}
+bool Data::operator!=(const Data &D) const {
+	return !(*this == D);
+}
+void Data::setPriority(int n) {
+	priority = n;
 }

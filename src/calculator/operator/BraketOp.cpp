@@ -1,17 +1,20 @@
 #include "BraketOp.h"
 #include <string>
+using namespace std;
 
-
-BraketOp::BraketOp() {
-	unitType = "Braket";
+double BraketOp::getValue() {
+	return 0.0;
 }
+BraketOp::BraketOp() {}
 BraketOp::~BraketOp() {}
 BraketOp::BraketOp(string str) {
-	if (strcmp(str, "(")) {
-		priority = 20
+	if (str == "(") {
+		priority = 20;
+		unitType = "openB";
 	}
-	else if (strcmp(str, ")")) {
+	else if (str == ")") {
 		priority = 19;
+		unitType = "closeB";
 	}
 	else {
 		try {
@@ -22,7 +25,7 @@ BraketOp::BraketOp(string str) {
 		}
 	}
 }
-RawElement calculate(RawElement e1, RawElement e2) {
+RawElement BraketOp::calculate(RawElement e1, RawElement e2) {
 	try
 	{
 		throw "Wrong input error! Cannot caclulate with brakets.";
@@ -30,7 +33,8 @@ RawElement calculate(RawElement e1, RawElement e2) {
 	catch (char* msg)
 	{
 		cout << msg << endl;
-		return;
+		RawElement tmp;
+		return tmp;
 	}
 }
 int BraketOp::getPriority() {

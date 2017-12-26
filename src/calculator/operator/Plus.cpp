@@ -6,17 +6,21 @@
 using namespace std;
 
 Plus::Plus() {
-	this.unitType = "Plus";
+	unitType = "Plus";
+	priority = 12;
 }
 RawElement Plus::calculate(RawElement e1, RawElement e2) {
-	if (strcmp(e1.getType(), "float") == 0 || strcmp(e2.getType(), "float") == 0)
-		return new FloatElement(e1.getValue() + e2.getValue());
+	if (e1.getType() == "float" || e2.getType() == "float")
+		return FloatElement(e1.getValue() + e2.getValue());
 	else
-		return new IntElement(e1.getValue() + e2.getValue());
+		return IntElement((int)e1.getValue() + (int)e2.getValue());
 }
 int Plus::getPriority() {
-	return 1;
+	return priority;
 }
-string Plus::getType() {
+std::string Plus::getType() {
 	return unitType;
+}
+double Plus::getValue() {
+	return value;
 }

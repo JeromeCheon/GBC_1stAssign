@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/genius/GBC/src/./calculator/./Data.h
+string
+-
+
+/home/genius/GBC/src/./calculator/./operand/RawElement.h
+string
+-
+../Data.h
+/home/genius/GBC/src/./calculator/./Data.h
+
+/home/genius/GBC/src/./calculator/Calculator.h
+./operand/RawElement.h
+/home/genius/GBC/src/./calculator/./operand/RawElement.h
+string
+-
+iostream
+-
+stack
+-
+vector
+-
+Data.h
+/home/genius/GBC/src/./calculator/Data.h
+string
+-
+list
+-
+
+/home/genius/GBC/src/./calculator/Data.h
+string
+-
+
+/home/genius/GBC/src/main.cpp
+iostream
+-
+./calculator/Calculator.h
+/home/genius/GBC/src/./calculator/Calculator.h
+

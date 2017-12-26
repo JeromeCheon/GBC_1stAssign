@@ -1,3 +1,4 @@
+#pragma once
 #ifndef OP_H
 #define OP_H
 #include <iostream>
@@ -7,13 +8,10 @@
 class Op : public Data {
 public:
 	Op();
-	~Op();
-	virtual RawElement calculate(RawElement e1, RawElement e2);
+	//virtual RawElement calculate(RawElement e1, RawElement e2);
 	virtual int getPriority();
 	void setPriority(int n);
-	virtual void getValue();
+	virtual double getValue();
 	virtual std::string getType();
-private:
-	int priority;
-}
+};
 #endif

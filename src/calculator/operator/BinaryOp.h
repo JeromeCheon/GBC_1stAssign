@@ -1,3 +1,4 @@
+#pragma once
 #ifndef BINARYOP_H
 #define BINARYOP_H
 #include "../operand/RawElement.h"
@@ -10,5 +11,6 @@ public:
 	virtual RawElement calculate(RawElement e1, RawElement e2); // override!
 	virtual int getPriority(); // override!
 	virtual std::string getType();
+	virtual double getValue();
 };
 #endif

@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(calculator)
+include_directories(../ ../parser ../operator)
+add_library(operand STATIC RawElement.cpp IntElement.cpp FloatElement.cpp)
+TARGET_LINK_LIBRARIES(operand calculator operator parser)
+#TARGET_COMPILE_OPTIONS(cal.out PUBLIC -g -Wall)
+SET(CMAKE_VERBOSE_MAKEFILE true)

@@ -1,2 +1,10 @@
-add_executable(calExe calculator.cpp)
-
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(calculator)
+include_directories(parser operand operator)
+add_subdirectory(parser)
+add_subdirectory(operand)
+add_subdirectory(operator)
+add_library(calculator STATIC Calculator.cpp Data.cpp)
+TARGET_LINK_LIBRARIES(calculator parser operand operator)
+#TARGET_COMPILE_OPTIONS(cal.out PUBLIC -g -Wall)
+SET(CMAKE_VERBOSE_MAKEFILE true)

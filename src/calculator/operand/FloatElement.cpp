@@ -1,15 +1,15 @@
 #include "FloatElement.h"
-
+#include <stdlib.h>
 FloatElement::FloatElement() {}
 
-FloatElement::FloatElement(int n) {
+FloatElement::FloatElement(double n) {
 	value = n;
-	type = "float";
+	unitType = "float";
 }
 
 FloatElement::FloatElement(std::string n) {
-	value = stof(n);
-	type = "float";
+	value = atof(n.c_str());
+	unitType = "float";
 }
 
 double FloatElement::getValue() {
@@ -17,5 +17,5 @@ double FloatElement::getValue() {
 }
 
 std::string FloatElement::getType() {
-	return type;
+	return unitType;
 }

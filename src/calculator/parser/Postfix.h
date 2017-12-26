@@ -1,3 +1,4 @@
+#pragma once
 #ifndef POSTFIX_H
 #define POSTFIX_H
 
@@ -9,14 +10,14 @@
 #include "../operator/Op.h"
 #include "../Data.h"
 
-std::stack <Op> st;
-std::list <Data> pf;
-
-
 class Postfix {
 public:
+	std::list <Data> pf;
+	std::list <Data> getPf();
 	Postfix();
-	void getPostfix();
+	std::list <Data> getPostfix(Parser* a);
+private:
+	std::stack <Data> st;
 };
 
 #endif
