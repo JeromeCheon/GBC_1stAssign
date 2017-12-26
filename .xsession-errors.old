@@ -1,2 +1,10 @@
 openConnection: connect: No such file or directory
 cannot connect to brltty at :0
+upstart: indicator-bluetooth main process (1505) killed by TERM signal
+upstart: indicator-power main process (1506) killed by TERM signal
+upstart: indicator-datetime main process (1514) killed by TERM signal
+upstart: indicator-printers main process (1527) killed by TERM signal
+upstart: indicator-session main process (1528) killed by TERM signal
+upstart: indicator-application main process (1548) killed by TERM signal
+upstart: url-dispatcher-update-system pre-start process (5464) terminated with status 1
+upstart: url-dispatcher-update-system pre-start process (5826) terminated with status 1

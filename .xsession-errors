@@ -1,2 +1,3 @@
 openConnection: connect: No such file or directory
 cannot connect to brltty at :0
+upstart: click-user-hooks main process (1593) terminated with status 1

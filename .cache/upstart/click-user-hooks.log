@@ -1,0 +1,20 @@
+
+** (process:1776): WARNING **: Unable to get manifest for 'com.ubuntu.gallery' package: com.ubuntu.gallery does not exist in any database for user jeonghyejin
+
+** (process:1776): CRITICAL **: manifest_version: assertion '*manifest != NULL' failed
+
+** (process:1776): CRITICAL **: click_triplet_to_app_id: assertion 'version != NULL' failed
+
+** (process:1776): WARNING **: Unable to get manifest for 'com.ubuntu.gallery' package: com.ubuntu.gallery does not exist in any database for user jeonghyejin
+
+** (process:1776): CRITICAL **: manifest_version: assertion '*manifest != NULL' failed
+
+** (process:1776): CRITICAL **: click_triplet_to_app_id: assertion 'version != NULL' failed
+/usr/lib/ubuntu-push-client/click-hook:15: PyGIWarning: Click was imported without specifying a version first. Use gi.require_version('Click', '0.4') before import to ensure that the right version gets loaded.
+  from gi.repository import Click
+
+** (process:1593): WARNING **: hooks.vala:1216: User-level hook push-helper failed: Hook command '/usr/lib/ubuntu-push-client/click-hook' failed: Child process exited with code 1
+Nothing to install.
+Nothing to update.
+Nothing to delete.
+Some user-level hooks failed: push-helper
